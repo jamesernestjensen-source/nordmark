@@ -1,1 +1,80 @@
+/* Grund */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* Layout */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* Rubriker */
+h1, h2, h3 {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Text */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Länkar */
+a {
+  color: #1a1a1a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
 
