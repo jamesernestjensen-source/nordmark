@@ -5,7 +5,21 @@
   --color-muted: #666666;
   --color-border: #e6e6e6;
 }
+#navbar__logo img {
+  display: block;
+}
 
+.navbar.logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width:40px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+     /* behåller proportioner *
 /* Grund */
 body {
   margin: 0;
@@ -25,7 +39,7 @@ body {
 }
 
 .site-header img {
-  height: 42px;
+  height: 120px;
 }
 
 .site-header nav a {
