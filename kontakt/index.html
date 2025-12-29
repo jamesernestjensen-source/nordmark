@@ -53,46 +53,28 @@ Fyll i formuläret nedan så återkommer jag inom 1–2 arbetsdagar.
 Detta är helt förutsättningslöst.
 </p>
 
-<form 
-  action="https://formspree.io/f/xykybbll"
-  method="POST"
-  class="contact-form"
->
-  <input type="hidden" name="_redirect" value="https://nmco.se/kontakt/tack.html">
+<form id="contact-form"  method="POST">
 
   <div class="form-field">
     <label for="name">Namn</label>
-    <input 
-      type="text" 
-      id="name" 
-      name="name" 
-      required
-    >
+    <input id="name" name="name" type="text" required>
   </div>
 
   <div class="form-field">
     <label for="email">E-post</label>
-    <input 
-      type="email" 
-      id="email" 
-      name="email" 
-      required
-    >
+    <input id="email" name="email" type="email" required>
   </div>
 
   <div class="form-field">
     <label for="message">Meddelande</label>
-    <textarea 
-      id="message" 
-      name="message" 
-      rows="5"
-      required
-    ></textarea>
+    <textarea id="message" name="message" rows="6" required></textarea>
   </div>
 
-  <button type="submit" class="btn">
-    Skicka förfrågan
-  </button>
+  <button type="button" class="btn" id="submit-btn">
+  Skicka förfrågan
+</button>
+
+
 </form>
 
 <p>
@@ -112,6 +94,7 @@ Verksam i Skaraborg och närliggande områden.
 <footer>
   <p>© Nordmark & Co</p>
 </footer>
+<script src="/JS/kontakt.js"></script>
 
 </body>
 </html>

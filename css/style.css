@@ -69,41 +69,67 @@ footer {
   color: var(--color-muted);
 }
 
+/* ===== Kontaktformulär ===== */
+
 .contact-form {
   max-width: 500px;
   margin: 2rem auto;
+  text-align: left; /* bryter arv från main */
 }
 
+/* Wrapper för varje fält */
 .form-field {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stapla label + input */
   margin-bottom: 1.2rem;
 }
 
+/* Labels */
 .form-field label {
   margin-bottom: 0.4rem;
   font-weight: 600;
+  text-align: left;
 }
 
+/* Inputs & textarea */
 .form-field input,
 .form-field textarea {
+  width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: inherit;
 }
-
-.form-field input:focus,
-.form-field textarea:focus {
-  outline: none;
-  border-color: #030040;
-}
+/* ===== Primär knapp ===== */
 
 .btn {
-  background: #030040;
-  color: #fff;
-  padding: 12px 24px;
+  display: inline-block;
+  background-color: #030040;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover */
+.btn:hover {
+  background-color: #050070;
+  transform: translateY(-1px);
+}
+
+/* Active */
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Focus (tillgänglighet) */
+.btn:focus-visible {
+  outline: 3px solid rgba(3, 0, 64, 0.35);
+  outline-offset: 2px;
 }
