@@ -69,3 +69,41 @@ footer {
   color: var(--color-muted);
 }
 
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-field label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #030040;
+}
+
+.btn {
+  background: #030040;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
